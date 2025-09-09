@@ -89,7 +89,7 @@ export const pageTitle = "Assignment 01";
       <section class="explore">
         <p class="big-text">
           Ready to plan your adventure? <br />
-          Start exploring and find your perfect Hudson Valley experience.
+          Start exploring and find your perfect <br>Hudson Valley experience.
         </p>
       </section>
       <nav class="places-grid">
@@ -191,4 +191,80 @@ export const pageTitle = "Assignment 01";
     padding: 32px;
   }
 
+   .section-text-panel{
+    background-color: #F2F2F0;
+    width: 400px;
+    padding: 32px;
+  }
+
+  .section-image{
+    height:500px;
+    width: 800px;
+    flex-wrap: wrap
+  }
+
+  .section-activity{
+    display: flex; 
+    flex-direction: row;
+    align-content: center;
+    justify-content: center
+  
+  }
+
+  #paddle.section-activity{
+    flex-direction: row-reverse
+  }
+
+  .btn-cta{
+    color:red;
+  }
+  
+  .big-text{
+    font-size: 36px;
+    padding: 64px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .places-grid{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 384px;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 64px;
+    gap: 10px;
+    
+  }
+
+  .places-tile{
+   background-color: #FFD1A8;
+   height: 100px;
+   width: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flow: vertical
+  }
+  .places-name{
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+    letter-spacing: 0%;
+    align-items: center;
+  }
+  .places-location{
+    font-weight:500;
+    font-style: medium;
+    size: 16px;
+    letter-spacing: 0%;
+  }
+  
 </style>
