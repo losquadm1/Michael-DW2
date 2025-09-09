@@ -194,7 +194,9 @@ export const pageTitle = "Assignment 01";
    .section-text-panel{
     background-color: #F2F2F0;
     width: 400px;
+    height: 500px;
     padding: 32px;
+    gap: 20px
   }
 
   .section-image{
@@ -216,7 +218,18 @@ export const pageTitle = "Assignment 01";
   }
 
   .btn-cta{
-    color:red;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: solid 2px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    font-size:20px;
+    font-style: bold;
+    font-weight: 700; 
+    margin-top: 20px;
   }
   
   .big-text{
@@ -233,6 +246,7 @@ export const pageTitle = "Assignment 01";
 
   .places-grid{
     display: flex;
+    place-self: center;
     align-content: center;
     flex-wrap: wrap;
     width: 1200px;
