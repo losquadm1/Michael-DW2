@@ -187,6 +187,8 @@ export const pageTitle = "Assignment 01";
     position:relative;
     z-index: 100;
     background-color: white;
+    background-opacity: 80%;
+    opacity: 80%;
     width: 400px;
     padding: 32px;
   }
@@ -265,20 +267,28 @@ export const pageTitle = "Assignment 01";
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   flow: vertical
+   align-content: flex-start;
+   padding-top: 10px;
+   flow: vertical;
+   text-decoration: none;
+   margin: 0px;
+   text-align: center;
+   line-height: 110%;
+   color: black
   }
+
   .places-name{
     font-weight: 700;
-    font-style: bold;
+    word-spacing: 0%;
     font-size: 20px;
-    letter-spacing: 0%;
-    align-items: center;
+    margin: 0px;
+    line-height: 110%
   }
   .places-location{
     font-weight:500;
-    font-style: medium;
-    size: 16px;
-    letter-spacing: 0%;
+    word-spacing: 0%;
+    margin: 0px;
+    font-size: 16px
   }
 
   nav {
@@ -293,7 +303,8 @@ export const pageTitle = "Assignment 01";
    margin: 30px;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 300px
+    margin-right: 300px;
+    align-items: center;
   }
 
   .nav-items{
@@ -304,4 +315,18 @@ export const pageTitle = "Assignment 01";
     gap: 75px;
     margin-left: 300px;
   }
+
+  .nav-btn {
+    color: #FFD1A8;
+    font-color: #FFD1A8;
+    text-decoration: none;
+    border-radius: 8px;
+    border: solid 0px;
+    background-color: #174A28;
+    padding:8px 16px 8px 16px;
+    font-weight:400;
+    font-size: 20px;
+
+  }
+
 </style>
