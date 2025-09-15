@@ -1,0 +1,344 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import imgBike from "@assets/assignment-01/bike.jpg";
+import imgHero from "@assets/assignment-01/hero-image.jpg";
+import imgHike from "@assets/assignment-01/hike.jpg";
+import imgPaddle from "@assets/assignment-01/paddle.jpg";
+
+// This next line is used to set the page title on the site navigation and in the browser tab.
+export const pageTitle = "Assignment 01";
+---
+
+<Layout compact title={pageTitle}>
+  <div class="page-container">
+    <header>
+      <nav>
+        <h2 class="nav-branding">ExploreHV</h2>
+        <div class="nav-items">
+          <a href="#hike" class="nav-btn">Hike</a>
+          <a href="#paddle" class="nav-btn">Paddle</a>
+          <a href="#bike" class="nav-btn">Bike</a>
+        </div>
+      </nav>
+    </header>
+    <section class="section-hero">
+      <div class="hero-text-block">
+        <h1>Adventure is in your backyard!</h1>
+        <p>
+          From rugged cliffs and hidden lakes to winding trails and quiet
+          rivers, the Hudson Valley is a playground for explorers of every kind.
+          Choose your path and dive into the landscapes that make this region
+          unforgettable.
+        </p>
+      </div>
+      <Image
+        src={imgHero}
+        alt="View of the Catskill Mountains near Tannersville"
+        class="hero-image"
+      />
+      </section>
+      <section class="section-activity" id="hike">
+        <div class="section-text-panel">
+          <h2>Hike</h2>
+          <p>
+            Lace up your boots and wander through forests, ridgelines, and river
+            views. Whether you're after a casual stroll or a challenging summit,
+            the Hudson Valley has a trail for you.
+          </p>
+          <a href="" class="btn-cta">Explore Hikes</a>
+        </div>
+        <Image
+          src={imgHike}
+          alt="Person sitting on the edge of a cliff at Joppenburg Mountain in Rosendale"
+          class="section-image"
+        />
+      </section>
+      <section class="section-activity section-reverse" id="paddle">
+        <div class="section-text-panel">
+          <h2>Paddle</h2>
+          <p>
+            Kayak, canoe, or SUP your way through calm lakes and the mighty
+            Hudson River. Drift through quiet waters or chase a sunrise paddle
+            surrounded by breathtaking scenery.
+          </p>
+          <a href="" class="btn-cta">Explore Paddling</a>
+        </div>
+        <Image
+          src={imgPaddle}
+          alt="Person paddling in the Sawkill River near Kingston"
+          class="section-image"
+        />
+      </section>
+      <section class="section-activity" id="bike">
+        <div class="section-text-panel">
+          <h2>Bike</h2>
+          <p>
+            Ride through rolling farmland, historic towns, and winding carriage
+            roads. From gravel adventures to paved scenic byways, cycling here
+            is all about freedom and discovery.
+          </p>
+          <a href="" class="btn-cta">Explore Cycling</a>
+        </div>
+        <Image
+          src={imgBike}
+          alt="Bike on the side of a carriage road at Mohonk Preserve"
+          class="section-image"
+        />
+      </section>
+      <section class="explore">
+        <p class="big-text">
+          Ready to plan your adventure? <br />
+          Start exploring and find your perfect <br>Hudson Valley experience.
+        </p>
+      </section>
+      <nav class="places-grid">
+        <a class="places-tile"
+          ><p class="places-name">Mohonk Preserve</p>
+          <p class="places-location">New Paltz</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Minnewaska State Park Preserve</p>
+          <p class="places-location">Kerhonkson</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Breakneck Ridge</p>
+          <p class="places-location">Cold Spring</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Storm King Mountain</p>
+          <p class="places-location">Cornwall-on-Hudson</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Overlook Mountain</p>
+          <p class="places-location">Woodstock</p></a
+        >
+
+        <a class="places-tile"
+          ><p class="places-name">Hudson River Estuary</p>
+          <p class="places-location">Various access points</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Esopus Creek</p>
+          <p class="places-location">Saugerties</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Moodna Creek</p>
+          <p class="places-location">Cornwall</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Rondout Creek</p>
+          <p class="places-location">Kingston</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Black Creek Preserve</p>
+          <p class="places-location">Esopus</p></a
+        >
+
+        <a class="places-tile"
+          ><p class="places-name">Wallkill Valley Rail Trail</p>
+          <p class="places-location">Gardiner to Kingston</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Ashokan Rail Trail</p>
+          <p class="places-location">Olivebridge</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">
+            Hudson Valley Rail Trail → Walkway Over the Hudson
+          </p>
+          <p class="places-location">Highland to Poughkeepsie</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Albany-Hudson Electric Trail</p>
+          <p class="places-location">Columbia County</p></a
+        >
+        <a class="places-tile"
+          ><p class="places-name">Shawangunk Carriage Roads</p>
+          <p class="places-location">New Paltz / Minnewaska</p></a
+        >
+      </nav>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  /* importing fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+  .section-hero{
+    width:100%;
+    height:600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image{
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-text-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position:relative;
+    z-index: 100;
+    background-color: white;
+    opacity: 80%;
+    width: 400px;
+    padding: 0px 32px 26.8px 32px;
+  }
+
+   .section-text-panel{
+    background-color: #F2F2F0;
+    width: 400px;
+    padding: 32px;
+    gap: 20px
+  }
+
+  .section-image{
+    width: 55%;
+    flex-wrap: wrap;
+    object-fit: cover;
+  }
+
+  .section-activity{
+    display: flex; 
+    flex-direction: row;
+    align-content: center;
+    justify-content: center
+  
+  }
+
+  #paddle.section-activity{
+    flex-direction: row-reverse
+  }
+
+  .btn-cta{
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: solid 2px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    font-size:20px;
+    font-style: bold;
+    font-weight: 700; 
+    margin-top: 20px;
+  }
+  
+  .big-text{
+    font-size: 36px;
+    padding: 64px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .places-grid{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    place-self: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 1050px;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 64px;
+    gap: 10px;
+    
+  }
+
+  .places-tile{
+   background-color: #FFD1A8;
+   height: 100px;
+   width: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   text-decoration: none;
+   margin: 0px;
+   text-align: center;
+   line-height: 110%;
+   color: black
+  }
+
+  .places-name{
+    font-weight: 700;
+    word-spacing: 0%;
+    font-size: 20px;
+    margin: 0px;
+    line-height: 110%
+  }
+  .places-location{
+    font-weight:500;
+    word-spacing: 0%;
+    margin: 0px;
+    font-size: 16px
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    place-self: center;
+    width: 75%;
+  }
+
+  .nav-branding{
+   margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav-items{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 75px;
+    font-family: 'Bree Serif'
+  }
+
+  .nav-btn {
+    color: #FFD1A8;
+    font-color: #FFD1A8;
+    text-decoration: none;
+    border-radius: 8px;
+    border: solid 0px;
+    background-color: #174A28;
+    padding:8px 16px 8px 16px;
+    font-weight:400;
+    font-size: 20px;
+
+  }
+
+  p {
+    font-family: 'Inter'
+  }
+
+  h1 {
+    font-family: 'Bree Serif'
+  }
+
+  h2 {
+    font-family: 'Bree Serif'
+  }
+
+</style>
