@@ -1,10 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import imgBike from "@assets/assignment-01/bike.jpg";
-import imgHero from "@assets/assignment-01/hero-image.jpg";
-import imgHike from "@assets/assignment-01/hike.jpg";
-import imgPaddle from "@assets/assignment-01/paddle.jpg";
+import Accordion from "@components/site/Accordion.astro";
 
 // This next line is used to set the page title on the site navigation and in the browser tab.
 export const pageTitle = "Project 1 Perposal";
@@ -24,6 +21,7 @@ export const pageTitle = "Project 1 Perposal";
         <p> <br>An introspective website based around the question we've all been asking: If animals could drive what would they drive?</p>
 <br>
         <a href= "https://docs.google.com/document/d/1rd7hYidyuKrh8cFqp7xj84YsX4prJv3YlnBrn_wJCgc/edit?usp=sharing"><h1>Project Perposal</h1></a>
+
 <style>
         h2 {
           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -37,3 +35,12 @@ export const pageTitle = "Project 1 Perposal";
           font-size: 150%
         }
         </style>
+        
+ <Accordion title="Sick Ass Dog">
+     <p>test<p>
+    <p> content</p>
+    <p> more content</p>
+</Accordion>
+</Layout>
+
+  
