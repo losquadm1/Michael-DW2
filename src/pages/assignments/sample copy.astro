@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+export const pageTitle = "Java Test";
+import AgeChecker from "@components/site/AgeChecker.astro";
+---
+
+<Layout title={pageTitle}>
+ <AgeChecker birthYear={2015}></AgeChecker>
+
+ <button id="myButton">please work</button>
+</Layout>
+
+<script>
+    const myButton = document.querySelector("#my-button")
+
+    const myFunction = function () {
+        alert("Button was clicked!");
+    };
+    
+    myButton.addEventListener("click", myFunction);
+</script>
