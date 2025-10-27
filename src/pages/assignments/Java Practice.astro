@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout.astro";
+export const pageTitle = "Java Practice";
+---
+
+<Layout title={pageTitle}>
+ <button id="myButton">please work</button>
+<p class="text-block">dummy test</p>
+</Layout>
+
+<style>
+    .text-block {
+        border: 1px solid white;
+        padding: 1rem;
+    }
+    .large-font {
+        font-size: 3rem;
+    }}
+</style>
+
+<script>
+    const myButton = document.querySelector("#myButton");
+
+    const myAction = function () {
+        const myTextBlock = document.querySelector (".text-block");
+        myTextBlock?.classList.toggle("large-font"); 
+    }
+
+    myButton?.addEventListener('click', myAction);
+</script>

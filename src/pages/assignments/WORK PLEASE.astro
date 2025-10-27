@@ -30,3 +30,24 @@ import ButtonColor from "@components/site/ButtonColor.astro";
     
     ButtonColor.addEventListener("click", myFunction);
 </script>
+
+<style>
+    .text-block {
+        border: 1px solid white;
+        padding: 1rem;
+    }
+    .large-font {
+        font-size: 3rem;
+    }}
+</style>
+
+<script>
+    const myButton = document.querySelector(".my-button");
+
+    const myAction = function () {
+        const myTextBlock = document.querySelector (".text-block");
+        myTextBlock?.classList.toggle("large-font"); 
+    }
+
+    myButton?.addEventListener('click', myAction);
+</script>
