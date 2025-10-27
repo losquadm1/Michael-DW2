@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 export const pageTitle = "Java Test";
 import AgeChecker from "@components/site/AgeChecker.astro";
+import ButtonColor from "@components/site/ButtonColor.astro";
 ---
 
 <Layout title={pageTitle}>
@@ -18,4 +19,14 @@ import AgeChecker from "@components/site/AgeChecker.astro";
     };
     
     myButton.addEventListener("click", myFunction);
+</script>
+
+<script>
+    const ButtonColor = document.querySelector("#ButtonColor")
+
+    const myFunction = function () {
+        alert("Button was clicked!");
+    };
+    
+    ButtonColor.addEventListener("click", myFunction);
 </script>
