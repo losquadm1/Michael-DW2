@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+export const pageTitle = "listing my lists in js";
+
+const people = [
+{    
+name: "carl0",
+url: "https://google.com",
+},
+{    
+name: "carl1",
+url: "https://google.com",
+},
+{    
+name: "carl2",
+url: "https://google.com",
+},
+{    
+name: "carl3",
+url: "https://google.com"
+},
+];
+
+---
+<Layout>
+    {
+    people.map(function (person){
+        return <a href={person.url}>{person.name}</a>
+})
+    }
+</Layout>

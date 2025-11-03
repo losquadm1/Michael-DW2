@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import List from "../../components/site/List.astro";
+
+export const pageTitle = "listing my lists in js";
+
+const students = [
+    "bob", "carl", "jon", "soup",
+];
+
+const michael = {
+    name: "michael",
+    hometown: "hicksville",
+    website: "https://kristofflalicki.dev",
+    age: 21
+};
+---
+<Layout compact title={pageTitle}>
+    <List person={michael}>
+        
+    </List>
+
+    <ul>
+    {students.map(function (item){
+        return <li>{item}</li>
+    })}
+</ul>
+</Layout>

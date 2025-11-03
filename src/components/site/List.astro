@@ -1,0 +1,18 @@
+---
+const {person} = Astro.props;
+---
+<article>
+    <h2>{person.name}</h2>
+        <p>Age {person.age}, from {person.hometown}</p>
+        <a href={person.website}>View Website</a>
+</article>
+
+
+<style>
+    article {
+        max-width: 600px;
+        margin: 1rem auto;
+        padding: 1rem;
+        border: 2px solid white;
+    }
+</style>
