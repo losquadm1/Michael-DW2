@@ -1,0 +1,67 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+export const pageTitle = "Color Themes";
+---
+<Layout title={pageTitle}>
+
+<h1>heading</h1>
+<p>text</p>
+<button id="btnDark">Dark Mode</button>
+<button id="btnLight">Light Mode</button>
+
+</Layout>
+
+<script>
+const btnDark = document.querySelector("#btnDark");
+
+const setDark = function (){
+    document.documentElement.style.colorScheme = "dark";
+}
+// attach function to button
+btnDark?.addEventListener('click', setDark);
+
+
+    const btnLight = document.querySelector("#btnLight");
+const setLight = function (){
+    document.documentElement.style.colorScheme = "light";
+}
+// attach function to button
+btnLight?.addEventListener('click', setLight);
+</script>
+
+<style is:global>
+    :root{
+        --theme-dark-bg: #333333;
+        --theme-dark-fg: #FFFFFF;
+        --theme-dark-accent: #0766B8;
+
+        --theme-light-bg: #FFFFFF;
+        --theme-light-fg: #333333;
+        --theme-light-accent: #00B2FF;
+
+        --theme-light-primary:  #00B2FF;
+        --theme-dark-primary:  #0766B8;
+        --theme-light-secondary:  #00B2FF;
+        --theme-dark-secondary:  #0766B8;
+
+        color-scheme: light dark;
+        
+        --color-fg: light-dark(var(--theme-light-fg), var(--theme-dark-fg));
+        --color-bg: light-dark(var(--theme-light-bg), var(--theme-dark-bg));
+        --color-accent: light-dark(var(--theme-light-accent), var(--theme-dark-accent));
+        --color-secondary: light-dark(var(--theme-light-secondary), var(--theme-dark-secondary));
+        --color-secondary: light-dark(var(--theme-light-primary), var(--theme-dark-primary))
+}
+
+    body{
+        background-color: var(--color-bg);
+        color: var(--color-fg)
+    }
+    
+    h1{
+        color: var(--color-accent)
+    }
+
+</style>
